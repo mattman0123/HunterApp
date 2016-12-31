@@ -43,5 +43,7 @@
         android:id="@+id/btn_Map_Activity_Open"
         android:layout_above="@+id/btn_Rules_Activity_Open"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/btn_About_Activity_Open" />
+        android:layout_toEndOf="@+id/btn_About_Activity_Open"
+        android:onClick="Open_Map"
+        />
 </RelativeLayout>
