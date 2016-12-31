@@ -14,8 +14,7 @@ public class MainPage extends AppCompatActivity {
     }
 
     public void Open_Map(View view){
-        Intent i = new Intent(getApplicationContext(),Map_Activity.class);
+        Intent i = new Intent(getApplicationContext(),MapsActivity.class);
         startActivity(i);
-
     }
 }
