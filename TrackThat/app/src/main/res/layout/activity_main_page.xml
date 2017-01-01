@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_Rules_Activity_Open"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="Open_RandR"/>
 
     <Button
         android:text="Open Weather"
@@ -34,7 +35,8 @@
         android:id="@+id/btn_Weather_Activity_Open"
         android:layout_above="@+id/btn_About_Activity_Open"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/btn_Rules_Activity_Open" />
+        android:layout_toStartOf="@+id/btn_Rules_Activity_Open"
+        android:onClick="Open_Weather"/>
 
     <Button
         android:text="Open Map"

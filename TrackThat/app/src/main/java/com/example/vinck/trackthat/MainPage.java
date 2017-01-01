@@ -17,4 +17,14 @@ public class MainPage extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),MapsActivity.class);
         startActivity(i);
     }
+
+    public void Open_Weather(View view){
+        Intent i = new Intent(getApplicationContext(),Weather.class);
+        startActivity(i);
+    }
+
+    public void Open_RandR(View view){
+        Intent i = new Intent(getApplicationContext(),RulesandReg.class);
+        startActivity(i);
+    }
 }
