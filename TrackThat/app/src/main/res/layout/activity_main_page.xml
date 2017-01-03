@@ -11,41 +11,33 @@
     tools:context="com.example.vinck.trackthat.MainPage">
 
     <Button
-        android:text="About"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_About_Activity_Open"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/btn_Rules_Activity_Open" />
-
-    <Button
         android:text="Rules and Regulations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_Rules_Activity_Open"
+        android:onClick="Open_RandR"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="Open_RandR"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:text="Open Weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_Weather_Activity_Open"
-        android:layout_above="@+id/btn_About_Activity_Open"
+        android:onClick="Open_Weather"
+        android:visibility="visible"
+        android:layout_above="@+id/btn_Map_Activity_Open"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/btn_Rules_Activity_Open"
-        android:onClick="Open_Weather"/>
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:text="Open Map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_Map_Activity_Open"
-        android:layout_above="@+id/btn_Rules_Activity_Open"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/btn_About_Activity_Open"
         android:onClick="Open_Map"
-        />
+        android:layout_above="@+id/btn_Rules_Activity_Open"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

@@ -21,7 +21,6 @@ import com.google.android.gms.maps.SupportMapFragment;
  */
 public class MapsActivity extends AppCompatActivity
             implements
-            GoogleMap.OnMyLocationButtonClickListener,
             OnMapReadyCallback,
             ActivityCompat.OnRequestPermissionsResultCallback {
 
@@ -48,13 +47,13 @@ public class MapsActivity extends AppCompatActivity
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
     @Override
     public void onMapReady(GoogleMap map) {
         mMap = map;
 
-        mMap.setOnMyLocationButtonClickListener(this);
         enableMyLocation();
     }
 
@@ -73,13 +72,6 @@ public class MapsActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onMyLocationButtonClick() {
-        //Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
-        // Return false so that we don't consume the event and the default behavior still occurs
-        // (the camera animates to the user's current position).
-        return false;
-    }
 
 
     @Override
