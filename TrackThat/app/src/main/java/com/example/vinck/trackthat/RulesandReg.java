@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 
 import java.io.BufferedOutputStream;
@@ -89,5 +91,13 @@ public class RulesandReg extends AppCompatActivity {
         {
             out.write(buffer, 0, read);
         }
+    }
+
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 }
