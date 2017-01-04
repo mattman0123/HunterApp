@@ -114,7 +114,7 @@ public class MapsActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
 
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.MapMenu, menu);
+        inflater.inflate(R.menu.mapmenu, menu);
         return true;
     }
 }
